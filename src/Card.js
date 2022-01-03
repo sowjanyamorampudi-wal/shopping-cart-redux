@@ -31,11 +31,9 @@ const Card = ({ products, AddProduct, RemoveProduct }) => {
           <br />
           {products.map((product) => {
             return (
-              <div key={product.index}>
-                <div>
-                  {product.name}
-                  <span onClick={() => RemoveProduct(product.name)}>X</span>
-                </div>
+              <div>
+                {product.name}
+                <span onClick={() => RemoveProduct(product.name)}>X</span>
               </div>
             );
           })}
